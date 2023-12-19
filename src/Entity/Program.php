@@ -16,10 +16,10 @@ class Program
     #[ORM\Column(length: 255)]
     private ?string $name = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 255, nullable: true)]
     private ?string $number = null;
 
-    #[ORM\Column( nullable: true)]
+    #[ORM\Column(length: 255, nullable: true)]
     private ?string $description = null;
 
     public function getId(): ?int
