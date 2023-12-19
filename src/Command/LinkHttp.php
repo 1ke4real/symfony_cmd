@@ -23,8 +23,8 @@ class LinkHttp extends Command
     }
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $toto = $this->programHttp->getProgram();
-        $output->writeln($toto);
+        $program = $this->programHttp->getProgram();
+        $output->writeln($program);
         return Command::SUCCESS;
     }
 }

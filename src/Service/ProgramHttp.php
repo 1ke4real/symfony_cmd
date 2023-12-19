@@ -5,7 +5,8 @@ use App\Entity\Program;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
-#[AllowDynamicProperties] class ProgramHttp {
+#[AllowDynamicProperties]
+class ProgramHttp {
     private HttpClientInterface $client;
 
     public function __construct(HttpClientInterface $client,EntityManagerInterface $entityManager){
